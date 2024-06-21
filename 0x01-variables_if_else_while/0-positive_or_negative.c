@@ -1,19 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>   
+#include <time.h>
 
-int main() {
+int main(void)
+{
     int n;
 
     srand(time(NULL));
 
     n = rand() % 201 - 100; 
 
-    if (n > 0) {
+    if (n > 0)
+    {
         printf("%d is positive\n", n);
-    } else if (n < 0) {
+    }
+    else if (n < 0)
+    {
         printf("%d is negative\n", n);
-    } else {
+    }
+    else
+    {
         printf("%d is zero\n", n);
     }
 
