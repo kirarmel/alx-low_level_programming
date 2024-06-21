@@ -1,23 +1,29 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point of the program
+ *
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-    char lowercase = 'a';
-    char uppercase = 'A';
-    int i;
+	char lowercase = 'a';
+	char uppercase = 'A';
+	int i;
 
-    for (i = 0; i < 26; i++)
-    {
-        putchar(lowercase);
-        lowercase++;
-    }
-    for (i = 0; i < 26; i++)
-    {
-        putchar(uppercase);
-        uppercase++;
-    }
+	for (i = 0; i < 26; i++)
+	{
+		putchar(lowercase);
+		lowercase++;
+	}
 
-    putchar('\n');
+	for (i = 0; i < 26; i++)
+	{
+		putchar(uppercase);
+		uppercase++;
+	}
 
-    return (0);
+	putchar('\n');
+
+	return (0);
 }

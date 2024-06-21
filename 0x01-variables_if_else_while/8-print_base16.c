@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point of the program
+ *
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
     char digit = '0';
@@ -9,6 +14,7 @@ int main(void)
         putchar(digit);
         digit++;
     }
+
     digit = 'a';
     while (digit <= 'f')
     {
@@ -16,7 +22,7 @@ int main(void)
         digit++;
     }
 
-    putchar('\n'); 
+    putchar('\n');
 
     return (0);
 }
