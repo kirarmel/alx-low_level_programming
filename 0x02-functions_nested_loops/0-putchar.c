@@ -1,12 +1,21 @@
-#include<stdio.h>
-/* declaration
- *
- * statement
- * return (0)
- */
+#include "main.h"
 
- int main()
+/**
+ * main - prints _putchar followed by a new line
+ *
+ * Return: 0 (Success)
+ */
+int main(void)
 {
-	printf("_putchar\n");
-	return(0);
+    char str[] = "_putchar";
+    int i = 0;
+
+    while (str[i] != '\0')
+    {
+        _putchar(str[i]);
+        i++;
+    }
+    _putchar('\n');
+    
+    return 0;
 }
